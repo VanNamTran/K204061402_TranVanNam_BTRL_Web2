@@ -1,0 +1,20 @@
+.col{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+
+
+}
+.col :hover{
+  color: #fff;
+  background-color:  #0099ff;
+
+}
+.row{
+  display: flex;
+
+}
+.article{
+  padding-left: 200px;
+}
+

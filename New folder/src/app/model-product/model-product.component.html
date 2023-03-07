@@ -1,0 +1,43 @@
+<p>model-product works!</p>
+<div [class]="flex">
+  <div>
+    <table border="1">
+      <tr>
+        <td>Product ID</td>
+        <td>{{product.productid}}</td>
+      </tr>
+      <tr>
+        <td>Product Name</td>
+        <td>{{product.productName}}</td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td>{{product.productPrice}}</td>
+      </tr>
+      <tr>
+        <td colspan="2" id="image"><img [src]="product.productImage" alt="" [class]="image"></td>
+      </tr>
+    </table>
+  </div>
+  <div>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>Mã sản phẩm</td>
+          <td>Tên sản phẩm</td>
+          <td>Giá sản phẩm</td>
+          <td>Ảnh minh họa</td>
+        </tr>
+      </thead>
+      <tbody *ngFor="let product of products">
+        <tr>
+          <td>{{product.productid}}</td>
+          <td>{{product.productName}}</td>
+          <td>{{product.productPrice}}</td>
+          <td><img [src]="product.productImage" alt=""[class]='imageListProduct'></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+
+<table border="1px">
+  <tr>
+    <th>Mã danh mục</th>
+    <th>Tên danh mục</th>
+  </tr>
+  <tr *ngFor="let product of products">
+    <td colspan="2">
+      <tr>
+        <td >{{product.Cateid}}</td>
+        <td >{{product.CateName}}</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table border="1px">
+            <tr>
+              <td>mã sản phẩm </td>
+              <td>tên sản phẩm</td>
+              <td>giá sản phẩm</td>
+              <td>hình ảnh</td>
+            </tr>
+
+            <tr *ngFor="let p of product.Products">
+              <td>{{p.ProductId}}</td>
+              <td>{{p.ProductName}}</td>
+              <td>{{p.Price}}</td>
+              <td><img style="width: 50px;" [src]="p.Image" alt=""></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </td>
+  </tr>
+
+
+</table>

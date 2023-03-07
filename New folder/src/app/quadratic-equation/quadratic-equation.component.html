@@ -1,0 +1,32 @@
+<p>quadratic-equation works!</p>
+<table border="1">
+  <table>
+    <tr >
+      <th colspan="2"> Giải phương trình bậc 2 online</th>
+    </tr>
+    <tr>
+      <th>hệ số a</th>
+      <th><input type="text" name="" id=""[(ngModel)]="numberA" (focus)="onFocus($event)"></th>
+    </tr>
+    <tr>
+      <th>hệ số b</th>
+      <th><input type="text"[(ngModel)]="numberB" (focus)="onFocus($event)"></th>
+    </tr>
+    <tr>
+      <th>hệ số c</th>
+      <th><input type="text"[(ngModel)]="numberC" (focus)="onFocus($event)"></th>
+    </tr>
+    <tr>
+      <th>kết quả</th>
+      <th><p *ngIf="x1 !== undefined && x2 !== undefined" style="margin: 0;"> {{resul}}</p> </th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>
+        <button (click)="findSolution()">Giải phương trình</button>
+        <button (click)="reset()">Xóa trắng</button>
+      </th>
+    </tr>
+  </table>
+</table>
+
